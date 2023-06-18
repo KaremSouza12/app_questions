@@ -46,13 +46,20 @@ class _PerguntasAppState extends State<PerguntasApp> {
     }
   ];
 
-  void responder(int pontuacao) {
+  void _responder(int pontuacao) {
     if (temPerguntaSelecionada) {
       setState(() {
         _perguntaSelecionada++;
-        _pontuacaoTotal += _pontuacaoTotal++;
+        _pontuacaoTotal += pontuacao++;
       });
     }
+  }
+
+  void reiniciarQuestionario() {
+    setState(() {
+      _perguntaSelecionada = 0;
+      _pontuacaoTotal = 0;
+    });
   }
 
   bool get temPerguntaSelecionada {
@@ -76,9 +83,12 @@ class _PerguntasAppState extends State<PerguntasApp> {
             ? Questionario(
                 perguntas: _perguntas,
                 perguntaSelecionada: _perguntaSelecionada,
-                quandoResponder: responder,
+                quandoResponder: _responder,
               )
-            : const Resultado(),
+            : Resultado(
+                pontuacao: _pontuacaoTotal,
+                reiniciarQuestionario: reiniciarQuestionario,
+              ),
       ),
     );
   }
