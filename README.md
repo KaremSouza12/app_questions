@@ -16,10 +16,7 @@ Após fazer o clone use o comando:
 flutter pub get
 ```
 
-<img src="images/1.png " width="150" height="200">
-<img src="images/1.png " width="150" height="200">
-<img src="images/1.png " width="150" height="200">
-<img src="images/1.png " width="150" height="200">
 
 
+![Logo do R](images/1.png )![Logo do R](images/2.png )![Logo do R](images/3.png )![Logo do R](images/4.png )
 
