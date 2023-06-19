@@ -16,6 +16,10 @@ Após fazer o clone use o comando:
 flutter pub get
 ```
 
-![Primeira tela](images/1.png )![Segunda tela](images/2.png )![terceira tela](images/3.png ) ![Quarta tela](images/4.png )
+<img src="images/1.png " width="100" height="200">
+<img src="images/1.png " width="100" height="200">
+<img src="images/1.png " width="100" height="200">
+<img src="images/1.png " width="100" height="200">
+
 
 
